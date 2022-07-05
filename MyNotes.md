@@ -26,6 +26,10 @@
 
 ## Introduction
 
+- `Object-Oriented Programming (OOP)` is a software development technique.
+- Before OOP, programmers relied on `procedural programming` (also called `structured programming`)
+- If OOP is the solution, *what problem is it solving?*
+
 ## Part I: Introdocing Object-Oriented Programming
 
 ### Chapter 1: Procedural Python Examples
