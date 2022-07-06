@@ -12,7 +12,7 @@ NCARDS = 8
 def getCard(deckListIn):
     thisCard = deckListIn.pop() # pops one off the top of the deck and returns it
     return thisCard
-    
+
 # Pass in a deck and this function returns a shuffled copy of the deck
 def shuffle(deckListIn):
     deckListOut = deckListIn.copy()  # make a copy of the starting deck
@@ -31,7 +31,7 @@ for suit in SUIT_TUPLE:
     for thisValue, rank in enumerate(RANK_TUPLE):
         cardDict = {'rank':rank, 'suit':suit, 'value':thisValue + 1}
         startingDeckList.append(cardDict)
-        
+
 score = 50
 
 while True:  # play multiple games
@@ -40,13 +40,13 @@ while True:  # play multiple games
     currentCardDict = getCard(gameDeckList)
     currentCardRank = currentCardDict['rank']
     currentCardValue = currentCardDict['value']
-    currentCardSuit = currentCardDict['suit']    
+    currentCardSuit = currentCardDict['suit']
     print('Starting card is:', currentCardRank + ' of ' + currentCardSuit)
     print()
 
     for cardNumber in range(0, NCARDS):   # play one game of this many cards
-        answer = input('Will the next card be higher or lower than the ' + 
-                               currentCardRank + ' of ' + 
+        answer = input('Will the next card be higher or lower than the ' +
+                               currentCardRank + ' of ' +
                                currentCardSuit + '?  (enter h or l): ')
         answer = answer.casefold()  # force lower case
         nextCardDict = getCard(gameDeckList)
@@ -61,7 +61,7 @@ while True:  # play multiple games
                 score = score + 20
             else:
                 print('Sorry, it was not higher')
-                score = score - 15          
+                score = score - 15
 
         elif answer == 'l':
             if nextCardValue < currentCardValue:
@@ -84,11 +84,11 @@ while True:  # play multiple games
 print('OK bye')
 
 
-    
-    
 
 
 
-         
 
-    
+
+
+
+
