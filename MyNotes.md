@@ -37,7 +37,7 @@
 ### Chapter 1: Procedural Python Examples (24 pages)
 
 - Code reuse and association of data and method that manipulate the data is difficult in procedural programming
-- Functions should *never* modify global variables
+- Functions should *never* modify global variables.
 
 ### Chapter 2: Modeling Pysical Objects with Object Oriented Programming (35 pages)
 
